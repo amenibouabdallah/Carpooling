@@ -8,7 +8,7 @@ const Header = () => {
             <div className="logo"><img src={logo} alt="logo" id='logo'/></div>
             <ul className="nav-links">
                 <li><a href="/" className={window.location.pathname === "/" ? "active" : ""}>Home</a></li>
-                <li><a href="/about" className={window.location.pathname === "/about" ? "active" : ""}>About Us</a></li>
+                <li><a href="/get-drive" className={window.location.pathname === "/get-drive" ? "active" : ""}>Get Drive</a></li>
                 <li><a href="/contact" className={window.location.pathname === "/contact" ? "active" : ""}>Contact Us</a></li>
                 <li><a href="/policy" className={window.location.pathname === "/policy" ? "active" : ""}>Policy</a></li>
                 <li><a href="/login">Login</a></li>
