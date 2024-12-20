@@ -1,0 +1,53 @@
+.avatar-container{
+    margin-top: 80px;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(35,178,111,1) 0%, rgba(0,99,219,1) 100%);height: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 100px;
+}
+.profile{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+.avatar{
+    height: 200px;
+    width: 200px;
+    box-shadow: rgba(255, 255, 255, 0.549) 0px 0px 10px;
+    border-radius: 50%  ;
+}
+.profile-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #505050;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 200px;
+    padding-bottom: 70px;
+}
+.name-input, .phone-input, .email-input, .address-input, .role-input, .verified-input{
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    gap: 30px;
+    height: 60px;
+    width: 400px;
+    background-color: #F2f5f9;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.name-phone, .email-address, .verified-role{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}

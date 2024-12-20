@@ -1,10 +1,21 @@
 import React from 'react';
-import './footer.css';
+
+const footerStyle = {
+    backgroundColor: '#0063db',
+    color: 'white',
+    fontFamily: 'Roboto, sans-serif',
+    padding: '20px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '20px',
+    fontWeight: 300
+};
 
 const Footer = () => {
     return (
-        <footer className="footer">
-            <p>© 2024 Website created by Amen Boughalmi and Ameny Bouabdallah</p>
+        <footer id="footer" style={footerStyle}>
+            <p>© 2024 Website created by Amen Boughalmi and Ameny Bouabdallah khalil feguir</p>
         </footer>
     );
 };

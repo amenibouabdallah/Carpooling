@@ -15,6 +15,7 @@ const GetDrive = () => {
     const [drives, setDrives] = useState([]);
     const [filteredDrives, setFilteredDrives] = useState([]);
     const [selectedDrive, setSelectedDrive] = useState(null);
+    const [noRidesFound, setNoRidesFound] = useState(false);
 
     const handleFindRide = () => {
         if (!depart && !destination && !date && !prix) {
@@ -29,6 +30,9 @@ const GetDrive = () => {
                 );
             });
             setFilteredDrives(filtered);
+            if (filtered.length === 0) {
+                setNoRidesFound(true);
+            }
         }
     };
 
@@ -137,7 +141,6 @@ const GetDrive = () => {
             }
         ];
         setDrives(dummyDrives);
-        setFilteredDrives(dummyDrives); // Initialize filtered drives with all drives
     }, []);
 
     const handleCardClick = (drive) => {
@@ -149,8 +152,12 @@ const GetDrive = () => {
     };
 
     const handleConfirmRide = () => {
-        alert('Ride confirmed!');
+        alert('Ride confirmed successfully!, Check your Email please !');
         setSelectedDrive(null);
+    };
+
+    const handleCloseNoRidesModal = () => {
+        setNoRidesFound(false);
     };
 
     return (
@@ -171,16 +178,26 @@ const GetDrive = () => {
                     </div>
                 </div>
             </div>
-            <div className='drive-content'>
-                {filteredDrives.map(drive => (
-                    <DriveCard key={drive.id} drive={drive} onClick={handleCardClick} />
-                ))}
-            </div>
+            {filteredDrives.length > 0 && (
+                <div className='drive-content'>
+                    {filteredDrives.map(drive => (
+                        <DriveCard key={drive.id} drive={drive} onClick={handleCardClick} />
+                    ))}
+                </div>
+            )}
             {selectedDrive && (
                 <Modal 
                     drive={selectedDrive} 
                     onClose={handleCloseModal} 
                     onConfirm={handleConfirmRide} 
+                />
+            )}
+            {noRidesFound && (
+                <Modal 
+                    drive={{}} 
+                    onClose={handleCloseNoRidesModal} 
+                    onConfirm={handleCloseNoRidesModal} 
+                    message="No destination found"
                 />
             )}
             <div className="infos-banner">

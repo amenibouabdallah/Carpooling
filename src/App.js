@@ -4,6 +4,7 @@ import Login from "./pages/Auth/Login/login";
 import Signup from "./pages/Auth/Signup/signup";
 import Home from "./pages/home/home";
 import GetDrive from "./pages/GetDrive/GetDrive";
+import Profile from "./pages/Profile/Profile";
 const NotFound = () => <h1>404 - Page Not Found</h1>;
 
 const App = () => {
@@ -14,6 +15,8 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/get-drive" element={<GetDrive />} />
+        <Route path="/profile" element={<Profile />} />
+        
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
