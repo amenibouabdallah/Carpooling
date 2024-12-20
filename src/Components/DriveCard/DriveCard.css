@@ -1,0 +1,87 @@
+.drive-card{
+    background-color: white;
+    width: 1145.61px;
+    display: flex;
+    gap: 40px;
+    padding: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+.drive-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.icon-driver{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0063dbb1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon-driver:hover{
+    background-color: #23b26f;
+}
+.icon-driver #icon{
+    height: 35px;
+    width: 35px;
+}
+
+.name-time-date h2{
+    font-size: 18px;
+    color: #505050;
+    font-weight: bold;
+}
+.name-time-date{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.name-time-date #time-date{
+    font-size:15px;
+    color: #2641D6;
+
+}
+.name-time-date #driver-text{
+    font-size: 14px;
+    color: #868E96;
+    font-weight: lighter;
+}
+.departure-arrival{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    color: #505050;
+    font-size: 15px;
+    font-weight: bold;
+}
+.price-places p:nth-child(1){
+    font-size: 18px;
+    color: #505050;
+    font-weight: bold;
+}
+.price-places{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.price-places p:nth-child(2){
+    font-size: 14px;
+    color: #868E96;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    color: #505050;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
