@@ -18,7 +18,7 @@ gap: 100px;
     box-shadow: rgba(255, 255, 255, 0.549) 0px 0px 10px;
     border-radius: 50%  ;
 }
-.profile-container p {
+.profile-container .p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #505050;

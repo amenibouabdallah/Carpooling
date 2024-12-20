@@ -25,31 +25,31 @@ const Profile = () => {
            <div className='profile-info'>
             <div className='name-phone'>
             <div className='name'>
-                <p> Full Name</p>
+                <p className='p'> Full Name</p>
                 <div className='name-input'>{user.name}</div>
             </div>
             <div className='phone'>
-                <p>Phone Number</p>
+                <p className='p'>Phone Number</p>
                 <div className='phone-input'>{user.phoneNumber}</div>
             </div>
             </div>
             <div className='email-address'>
             <div className='email'>
-                <p>Email</p>
+                <p className='p'>Email</p>
                 <div className='email-input'>{user.email}</div>
             </div>
             <div className='address'>
-                <p>Address</p>
+                <p className='p'>Address</p>
                 <div className='address-input'>{user.address}</div>
             </div>
             </div>
             <div className='verified-role'>
             <div className='role'>
-                <p>Role</p>
+                <p className='p'>Role</p>
                 <div className='role-input'>{user.role}</div>
             </div>
             <div className='verified'>
-                <p>Verified</p>
+                <p className='p'>Verified</p>
                 <div className='verified-input'>{user.isVerified ? 'Yes' : 'No'}</div>
             </div>
             </div>
