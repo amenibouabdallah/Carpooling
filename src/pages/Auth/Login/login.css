@@ -1,0 +1,96 @@
+.login-containerr{
+    display: flex;
+    flex-direction: row;
+}
+.loginImage{
+    background-image: url(../../../assets/authImage.png);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.loginText{
+    margin-left: 20%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.loginText h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px !important;
+    font-weight: bold;
+}
+.loginText h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px !important;
+    font-weight: bold;
+    list-style: none;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+}
+.login-container h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px !important;
+    font-weight: bold;
+    margin-right: 100px;
+    color: #333333;
+
+}
+.login-container p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px !important;
+    color: #333333;
+}
+.input-group-login input{
+    width: 307px;
+    height: 40px;
+    border-radius: 30px;
+    color: gray;
+    padding-left: 24px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px gray solid;
+}
+#logo{
+    width: 400px;
+   margin-right: 20px !important;
+}
+.login-form button{
+    width: 336px;
+    height: 40px;
+    background-color:#0575E6;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #0575E6;
+    border-radius: 30px;
+
+}
+.login-form button:hover{
+    background-color: #1B9CFC;
+    cursor: pointer;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    justify-content: center;
+}
+#email{
+    margin-bottom: 30px;
+}
+#password{
+    margin-bottom: 30px;
+}
+.signup-link{
+    text-decoration: none;
+}
