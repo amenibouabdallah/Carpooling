@@ -11,6 +11,7 @@ const Header = () => {
                 <li><a href="/get-drive" className={window.location.pathname === "/get-drive" ? "active" : ""}>Get Drive</a></li>
                 <li><a href="/profile" className={window.location.pathname === "/profile" ? "active" : ""}>Profile</a></li>
                 <li><a href="/history" className={window.location.pathname === "/history" ? "active" : ""}>History</a></li>
+                <li><a href="/create-ride" className={window.location.pathname === "/create-ride" ? "active" : ""}>Create Ride</a></li>
                 <li><a href="/login">Login</a></li>
                 <li><a href="/signup">Signup</a></li>
                 <li><a href="/logout">Logout</a></li>
