@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './signup.css';
 import logo from '../../../assets/logo.png';
 
-
 const SignUp = () => {
   const [formData, setFormData] = useState({
     fullname: '',
@@ -17,13 +16,39 @@ const SignUp = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
   const handleLogoClick = () => {
     window.location.href = "/";
   };
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Validate and handle the sign-up logic here
-    console.log('Form Data:', formData);
+    try {
+      const response = await fetch('http://localhost:8080/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.fullname,
+          phoneNumber: formData.phone,
+          email: formData.email,
+          password: formData.password,
+          address: formData.address,
+          role: formData.role,
+        }),
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        alert(result.message);
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to register user.');
+    }
   };
 
   return (

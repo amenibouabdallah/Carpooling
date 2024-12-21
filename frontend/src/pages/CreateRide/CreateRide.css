@@ -18,23 +18,62 @@
 .driverr p:nth-child(2){
     font-weight: bold;
     margin-top: 5px;
+    margin-bottom: 20px;
 }
 
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .modal-content {
     background: white;
     padding: 20px;
     border-radius: 5px;
+    margin-right: 50%;
     text-align: center;
+}
+.form-create-ride form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.form-create-ride form label{
+    display: flex ;
+    align-items: column;
+    gap: 30px;
+}
+.form-create-ride form input, .form-create-ride form textarea{
+    width: 700px;
+    height: 20px;
+    background-color: #F2F5F9;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+}
+#map{
+    width: 1000px;
+    height: 700px;
+}
+.form-create-ride{
+    display: flex;
+    gap: 20px;
+}
+.form-create-ride form button{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    background-color: #2641D6;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.form-create-ride form button:hover{
+    background-color: white;
+    color: #2641D6;
+    font-weight: bold;
+    border: 2px solid #2641D6;
 }

@@ -104,32 +104,26 @@ const CreateRide = () => {
             <div className='form-create-ride'>
                 <form onSubmit={handleSubmit}>
                     <label>
-                        Departure:
-                        <input type="text" value={departure} onChange={handleDepartureChange} onKeyPress={handleDepartureKeyPress} />
+                        <input type="text" value={departure} placeholder='Enter departure location' onChange={handleDepartureChange} onKeyPress={handleDepartureKeyPress} />
                     </label>
                     <label>
-                        Arrival:
-                        <input type="text" value={arrival} onChange={handleArrivalChange} />
+                        <input type="text" value={arrival} placeholder='Enter arrival location' onChange={handleArrivalChange} />
                     </label>
                     <label>
-                        Time:
-                        <input type="time" value={time} onChange={(e) => setTime(e.target.value)} />
+                        <input type="time" value={time} placeholder='Enter time' onChange={(e) => setTime(e.target.value)} />
                     </label>
                     <label>
-                        Number of Seats:
-                        <input type="number" value={seats} onChange={(e) => setSeats(e.target.value)} />
+                        <input type="number" value={seats}placeholder='Enter number of seats' onChange={(e) => setSeats(e.target.value)} />
                     </label>
                     <label>
-                        Price per Place:
-                        <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
+                        <input type="number" value={price} placeholder='Enter price' onChange={(e) => setPrice(e.target.value)} />
                     </label>
                     <label>
-                        Comment:
-                        <textarea value={comment} onChange={(e) => setComment(e.target.value)} />
+                        <textarea value={comment} placeholder='Enter comment' onChange={(e) => setComment(e.target.value)} />
                     </label>
                     <button type="submit">Submit</button>
                 </form>
-                <div id="map" style={{ height: '400px', width: '100%' }}></div>
+                <div id="map" style={{ height: '700px', width: '1000px', marginBottom:'70px' }}></div>
             </div>
             <Footer />
             {showModal && (
